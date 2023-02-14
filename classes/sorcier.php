@@ -7,6 +7,8 @@ class Sorcier extends Monstre{
     public $arm = 0;
     public $man = 20;
     public $regman = 3;
+    public $comp1 = "Eclat magique";
+    public $comp2 = "Soin";
     public function competence1($p){
         return "Ton adversaire attaque avec une magie de 20, tu subit " . $p->perdrePVbrut(20) . " dégats";
     }
