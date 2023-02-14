@@ -6,6 +6,8 @@ class Guerrier extends Personnage{
     public $arm = 5;
     public $man = 10;
     public $regman = 1;
+    public $comp1 = "Frappe lourde";
+    public $comp2 = "Cri de guerre";
     public function competence1($m){
         return "Tu inflige une attaque lourde de " . $this->atk+5 . ", ton adversaire subit " . $m->perdrePV($this->atk+5) . " dégats";
     }
