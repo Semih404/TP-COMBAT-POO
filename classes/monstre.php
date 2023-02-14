@@ -1,5 +1,5 @@
 <?php
-class monstre
+class Monstre
 {
     protected $pv;
     protected $atk;
