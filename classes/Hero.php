@@ -1,5 +1,5 @@
 <?php
-class personnage
+class Hero
 {
     protected $pv;
     protected $atk;
@@ -48,3 +48,4 @@ class personnage
     }
 }
 ?>
+
