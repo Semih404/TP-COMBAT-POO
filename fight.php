@@ -32,7 +32,7 @@ else if ($r==2){
     $monstre = new Griffon();
 }
 else{
-    $monstre = new assassin();
+    $monstre = new Assassin();
 }
 
 
