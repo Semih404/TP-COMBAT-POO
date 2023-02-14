@@ -1,6 +1,7 @@
 <?php
 
 class sorcier extends monstre{
+    public $face = "images/sorcier.gif";
     public $pv = 100;
     public $atk = 6;
     public $arm = 0;
