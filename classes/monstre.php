@@ -66,5 +66,17 @@ class Monstre
             return false;
         }
     }
+    public function AttaqueRandom($p){
+        $r= random_int(1,5);
+        if ($r==1){
+            $this->competence1($p);
+        }
+        else if ($r==2){
+            $this->competence2($p);
+        }
+        else{
+            $this->attaquer($p);
+        }
+    }
 }
 ?>
