@@ -1,5 +1,5 @@
 <?php
-class ogre extends monstre{
+class griffon extends monstre{
     public $pv = 170;
     public $atk = 10;
     public $arm = 0;
