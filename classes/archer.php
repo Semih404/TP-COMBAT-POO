@@ -6,6 +6,8 @@ class Archer extends Hero{
     public $arm = 2;
     public $man = 10;
     public $regman = 1;
+    public $comp1 = "Flèche perforente";
+    public $comp2 = "Multi-flèches";
     public function competence1($m){
         return "Tu attaque avec une flèche perforante, ton adversaire subit " . $m->perdrePVbrut($this->atk) . " dégats";
     }
