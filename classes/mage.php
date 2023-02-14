@@ -6,6 +6,8 @@ class Mage extends Hero{
     public $arm = 3;
     public $man = 20;
     public $regman = 2;
+    public $comp1 = "Eclat magique";
+    public $comp2 = "Désintegration";
     public function competence1($m){
         return "Tu attaque avec une magie de 20, ton adversaire subit " . $m->perdrePVbrut(20) . " dégats";
     }
