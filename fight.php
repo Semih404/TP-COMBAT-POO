@@ -32,9 +32,13 @@ else{
     $monstre = new Assassin();
 }
 
-while ($joueur->mort() == false && $monstre->mort() == false){
-?> <input type="button" name="atk" value="Attaquer"><input type="button" name="comp1" value="<?php $joueur->comp1() ?>"><input type="button" name="comp2" value="<?php $joueur->comp2() ?>">
-<?php 
+while ($joueur->mort() == false && $monstre->mort() == false)
+{
+    ?>
+    <button onclick="<?php $joueur->attaquer($monstre)?>;<?php $monstre->AttaqueRandom($joueur) ?>">Attaquer</button>
+    <button onclick="<?php $joueur->competence1($monstre)?>;<?php $monstre->AttaqueRandom($joueur) ?>"><?php echo $joueur->comp1()?></button>
+    <button onclick="<?php $joueur->competence2($monstre)?>;<?php $monstre->AttaqueRandom($joueur) ?>"><?php echo $joueur->comp2()?></button>
+    <?php 
 }
 
 ?>
