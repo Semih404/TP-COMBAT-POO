@@ -1,6 +1,6 @@
 <?php
 class Assassin extends Monstre{
-    public $nom = Assassin;
+    public $nom = 'Assassin';
     public $face = "images/assassin.gif";
     public $pv = 100;
     public $atk = 8;
