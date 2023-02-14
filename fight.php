@@ -33,7 +33,8 @@ else{
 }
 
 while ($joueur->mort() == false && $monstre->mort() == false){
-
+?> <input type="button" name="atk" value="Attaquer"><input type="button" name="comp1" value="<?php $joueur->comp1() ?>"><input type="button" name="comp2" value="<?php $joueur->comp2() ?>">
+<?php 
 }
 
 ?>
