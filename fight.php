@@ -3,26 +3,23 @@ session_start();
 
 require_once('config/autoload.php');
 
-$archer = new Archer();
-$guerrier = new Guerrier();
-$mage = new Mage();
-
 $classe;
-
+$joueur;
 if($_SESSION['classe']== "Archer"){
-    $classe = $archer->toString();
-    echo '<img src="' . $archer->face . '">';
-} elseif($_SESSION['classe']== "Guerrier"){
-    $classe = $guerrier->toString();
-    echo '<img src="' . $guerrier->face . '">';
-} elseif($_SESSION['classe']== "Mage"){
-    $classe = $mage->toString();
-    echo '<img src="' . $mage->face . '">';
+    $joueur = new Archer();
+    $classe = $joueur->toString();
+    echo '<img src="' . $joueur->face . '">';
+} else if($_SESSION['classe']== "Guerrier"){
+    $joueur = new Guerrier();
+    $classe = $joueur->toString();
+    echo '<img src="' . $joueur->face . '">';
+} else if($_SESSION['classe']== "Mage"){
+    $joueur = new Mage();
+    $classe = $joueur->toString();
+    echo '<img src="' . $joueur->face . '">';
 };
 
-$joueur =  $_SESSION['nom'] . $classe;
 
-echo $joueur;
 
 $r= random_int(1,3);
 if ($r==1){
@@ -35,5 +32,8 @@ else{
     $monstre = new Assassin();
 }
 
+while ($joueur->mort() == false && $monstre->mort() == false){
+
+}
 
 ?>
