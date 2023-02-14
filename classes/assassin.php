@@ -8,10 +8,12 @@ class Assassin extends Monstre{
     public $mana = 10;
     public $regman = 1;
     public function competence1($p){
-        return "Ton adversaire attaque avec une lance perçante, tu subis " . $p->perdrePVbrut($this->atk) . " dégats";
+        $r= random_int(1,6);
+        return "Ton adversaire attaque avec une dague empoisonnée, tu subis " . $p->perdrePV($this->atk) . " dégats + ". $p->perdrePVbrut($r) . " dégats de poison";
     }
     public function competence2(){
-        return "Ton adversaire augmente son armure de " . $this->arm=$this->arm+3;
+        return "Ton adversaire augmente son attaque de " . $this->atk=$this->atk+3;
+    }
     }
 }
 ?>
