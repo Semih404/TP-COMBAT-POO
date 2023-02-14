@@ -1,5 +1,5 @@
 <?php
-class guerrier extends personnage{
+class Guerrier extends Personnage{
     public $face = "images/guerrier.gif";
     public $pv = 150;
     public $atk = 8;
