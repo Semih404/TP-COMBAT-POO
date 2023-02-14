@@ -35,6 +35,18 @@ class Monstre
     {
         return $this->man;
     }
+    public function getManareg()
+    {
+        return $this->regman;
+    }
+    public function comp1()
+    {
+        return $this->comp1;
+    }
+    public function comp2()
+    {
+        return $this->comp2;
+    }
     public function perdrePV($nb)
     {
         return $this->pv - ($nb-$this->arm);
