@@ -7,6 +7,8 @@ class Assassin extends Monstre{
     public $arm = 1;
     public $mana = 10;
     public $regman = 1;
+    public $comp1 = "Dague mortelle";
+    public $comp2 = "Danse lame";
     public function competence1($p){
         $r= random_int(1,6);
         return "Ton adversaire attaque avec une dague empoisonnée, tu subis " . $p->perdrePV($this->atk) . " dégats + ". $p->perdrePVbrut($r) . " dégats de poison";
