@@ -6,6 +6,8 @@ class Griffon extends Monstre{
     public $arm = 0;
     public $man = 5;
     public $regman = 1;
+    public $comp1 = "Frappe lourde";
+    public $comp2 = "Déchainement sauvage";
     public function competence1($p){
         return "Ton adversaire inflige une attaque lourde de " . $this->atk+5 . ", tu subis " . $p->perdrePV($this->atk+5) . " dégats";
     }
