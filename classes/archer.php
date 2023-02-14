@@ -1,5 +1,6 @@
 <?php
-class archer extends personnage{
+class Archer extends Hero{
+    public $face = "images/archer.gif";
     public $pv = 100;
     public $atk = 13;
     public $arm = 2;
@@ -12,6 +13,9 @@ class archer extends personnage{
         $r= random_int(1,5);
 
         return "Tu attaque avec des flèches ".$r." fois , ton adversaire subit " . $m->perdrePV($this->atk*$r) . " dégats";
+    }
+    public function toString() {
+        return "Archer";
     }
 }
 ?>
