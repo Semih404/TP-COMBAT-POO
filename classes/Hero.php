@@ -46,6 +46,14 @@ class Hero
     public function attaquer($m) {
         return "Tu attaque avec une force de " . $this->atk . ", ton adversaire subit " . $m->perdrePV($this->atk) . " dégats";
     }
+    public function mort(){
+        if ($this->pv >= 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
 ?>
 
