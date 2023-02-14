@@ -23,4 +23,17 @@ if($_SESSION['classe']== "Archer"){
 $joueur =  $_SESSION['nom'] . $classe;
 
 echo $joueur;
+
+$r= random_int(1,3);
+if ($r==1){
+    $monstre = new Sorcier();
+}
+else if ($r==2){
+    $monstre = new Griffon();
+}
+else{
+    $monstre = new assassin();
+}
+
+
 ?>
