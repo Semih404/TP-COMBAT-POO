@@ -1,16 +1,16 @@
 <?php
-class assassin extends monstre{
+class Assassin extends Monstre{
+    public $face = "images/assassin.gif";
     public $pv = 100;
-    public $atk = 12;
-    public $arm = 1;
+    public $atk = 8;
+    public $arm = 6;
     public $mana = 10;
     public $regman = 1;
     public function competence1($p){
-        $r= random_int(1,6);
-        return "Ton adversaire attaque avec une dague empoisonnée, tu subis " . $p->perdrePV($this->atk) . " dégats + ". $p->perdrePVbrut($r) . " dégats de poison";
+        return "Ton adversaire attaque avec une lance perçante, tu subis " . $p->perdrePVbrut($this->atk) . " dégats";
     }
     public function competence2(){
-        return "Ton adversaire augmente son attaque de " . $this->atk=$this->atk+3;
+        return "Ton adversaire augmente son armure de " . $this->arm=$this->arm+3;
     }
 }
 ?>
