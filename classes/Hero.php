@@ -6,6 +6,8 @@ class Hero
     protected $arm;
     protected $man;
     protected $regman;
+    protected $comp1;
+    protected $comp2;
 
     public function __construct()
     {
@@ -14,6 +16,9 @@ class Hero
         $this->arm = 1;
         $this->man = 1;
         $this->regman = 1;
+        $this->comp1 = "";
+        $this->comp2 = "";
+        
     }
     public function getSante()
     {
