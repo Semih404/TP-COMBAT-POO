@@ -1,5 +1,5 @@
 <?php
-class griffon extends monstre{
+class Griffon extends Monstre{
     public $face = "images/griffon.gif";
     public $pv = 170;
     public $atk = 10;
