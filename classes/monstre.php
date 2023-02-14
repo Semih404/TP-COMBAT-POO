@@ -42,5 +42,13 @@ class Monstre
     public function attaquer($p) {
         return "Tu attaque avec une force de " . $this->atk . ", ton adversaire subit " . $p->perdrePV($this->atk) . " dégats";
     }
+    public function mort(){
+        if ($this->pv >= 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
 ?>
