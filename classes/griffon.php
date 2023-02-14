@@ -1,5 +1,6 @@
 <?php
 class griffon extends monstre{
+    public $face = "images/griffon.gif";
     public $pv = 170;
     public $atk = 10;
     public $arm = 0;
