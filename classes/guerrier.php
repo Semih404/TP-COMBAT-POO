@@ -11,7 +11,7 @@ class Guerrier extends Personnage{
     public function competence1($m){
         return "Tu inflige une attaque lourde de " . $this->atk+5 . ", ton adversaire subit " . $m->perdrePV($this->atk+5) . " dégats";
     }
-    public function competence2(){
+    public function competence2($m){
         return "Tu augmentes ton armure de " . $this->arm=$this->arm+3;
     }
 }
