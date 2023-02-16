@@ -1,13 +1,21 @@
 <?php
 class Griffon extends Monstre{
     public $face = "images/griffon.gif";
-    public $pv = 170;
-    public $atk = 10;
-    public $arm = 0;
-    public $man = 5;
-    public $regman = 1;
-    public $comp1 = "Frappe lourde";
-    public $comp2 = "Déchainement sauvage";
+    public $pv;
+    public $atk;
+    public $arm;
+    public $man;
+    public $regman;
+    public $comp1;
+    public $comp2;
+
+
+    public function __construct()
+    {
+        parent::__construct(170, 10, 0, 5, 1, "Frappe lourde",  "Déchainement sauvage");
+    }
+    
+
     public function competence1($p){
         return "Ton adversaire inflige une attaque lourde de " . $this->atk+5 . ", tu subis " . $p->perdrePV($this->atk+5) . " dégats";
     }

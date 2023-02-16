@@ -1,13 +1,18 @@
 <?php
 class Mage extends Hero{
     public $face = "images/mage.gif";
-    public $pv = 100;
-    public $atk = 6;
-    public $arm = 3;
-    public $man = 20;
-    public $regman = 2;
-    public $comp1 = "Eclat magique";
-    public $comp2 = "Désintegration";
+    public $pv;
+    public $atk;
+    public $arm;
+    public $man;
+    public $regman;
+    public $comp1;
+    public $comp2;
+
+    public function __construct()
+    {
+        parent::__construct(100, 6, 3, 20, 2, "Eclats magiques",  "Désintégration");
+    }
     public function competence1($m){
         return "Tu attaque avec une magie de 20, ton adversaire subit " . $m->perdrePVbrut(20) . " dégats";
     }

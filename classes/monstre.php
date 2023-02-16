@@ -1,23 +1,23 @@
 <?php
 class Monstre
 {
-    protected $pv;
-    protected $atk;
-    protected $arm;
-    protected $man;
-    protected $regman;    
-    protected $comp1;
-    protected $comp2;
+    private $pv;
+    private $atk;
+    private $arm;
+    private $man;
+    private $regman;
+    private $comp1;
+    private $comp2;
 
-    public function __construct()
+    public function __construct($pv,$atk,$arm,$man,$regman,$comp1,$comp2)
     {
-        $this->pv = 1;
-        $this->atk = 1;
-        $this->arm = 1;
-        $this->man = 1;
-        $this->regman = 1;
-        $this->comp1 = "";
-        $this->comp2 = "";
+        $this->pv=$pv;
+        $this->atk=$atk;
+        $this->arm=$arm;
+        $this->man=$man;
+        $this->regman=$regman;
+        $this->comp1=$comp1;
+        $this->comp2=$comp2;
     }
     public function getSante()
     {
