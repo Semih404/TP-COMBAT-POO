@@ -1,6 +1,6 @@
 <?php
 class Mage extends Hero{
-    public $face = "images/mage.gif";
+    public $face = "images/mageATK.gif";
     public $pv;
     public $atk;
     public $arm;
