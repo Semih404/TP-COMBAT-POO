@@ -22,7 +22,11 @@ session_start();
         <form action="classes/HeroesManager.php" method="POST">
             <input style="padding-bottom: -40px;" type="text" name="nom">
             <br>
+
             <h2 class='h2-index'>Classes :</h2>
+
+            <h2>Classes :</h2>
+
         <select name='classe'>
         <option>--Choisissez une classe</option>
         <option>Archer</option>
